@@ -1,11 +1,5 @@
 public class RunTrack extends Obstacles {
 
-
-    public RunTrack() {
-        super.value=8000.0f;
-        super.type="Run Track";
-    }
-
     public RunTrack(float value, String type) {
         super(value, type);
     }

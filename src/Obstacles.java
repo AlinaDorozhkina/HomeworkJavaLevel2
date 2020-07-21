@@ -7,8 +7,7 @@ public abstract class Obstacles {
         this.type = type;
     }
 
-    public Obstacles() {
-    }
+
 
     protected abstract boolean isItPossibleToDo(Competitive competitive);
 

@@ -10,8 +10,8 @@ public class Main {
 
 
         Obstacles [] obstacles=new Obstacles[3];
-        obstacles[0]=new RunTrack();
-        obstacles[1]=new Wall();
+        obstacles[0]=new RunTrack(8000, "short distance run track");
+        obstacles[1]=new Wall(5.f, "Wal");
         obstacles[2]=new RunTrack(12000, "Run Track2");
         letsStartCompetition(participent, obstacles);
     }
@@ -50,10 +50,11 @@ public class Main {
                 }
             }
         }
-        System.out.printf("Результаты:\n%s result %b;\n%s result %b;\n%s result %b;\n%s result %b;\n%s result %b;\n%s result %b;\n",
-                participent[0].getName(), participent[0].getResult(), participent[1].getName(), participent[1].getResult(), participent[2].getName(), participent[2].getResult(),
-                participent[3].getName(), participent[3].getResult(), participent[4].getName(), participent[4].getResult(), participent[5].getName(), participent[5].getResult());
+        System.out.println("Результаты:");
+        for (Competitive participant:participent) {
+            System.out.println(String.format("Имя: %s результат: %b,",participant.getName() ,participant.getResult()));
 
+        }
     }
 
 }

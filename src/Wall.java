@@ -1,8 +1,8 @@
 public class Wall extends Obstacles{
 
 
-    public Wall() {
-        super(5.0f,"Wall");
+    public Wall(float value, String type) {
+        super(value, type);
     }
 
     @Override

@@ -1,4 +1,4 @@
-public class Wall extends Obstacles{
+public class Wall extends Obstacles {
 
 
     public Wall(float value, String type) {
@@ -10,21 +10,12 @@ public class Wall extends Obstacles{
 
         competitive.jump();
         if (this.value <= competitive.getJumpVal()) {
-            System.out.println("Участник " + competitive.getName()+" перепрыгнул стену");
-            competitive.setResult(true);
-
             return true;
         } else {
-            System.out.println("Участник " + competitive.getName()+" не смог перепрыгнуть стену");
-            competitive.setResult(false);
-
             return false;
         }
     }
 
-    public float getValue() {
-        return value;
-    }
 }
 
 

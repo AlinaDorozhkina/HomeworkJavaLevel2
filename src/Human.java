@@ -1,13 +1,13 @@
-public class Human implements Competitive{
-    private  String name;
+public class Human implements Competitive {
+    private String name;
     private float runVal;
     private float jumpVal;
-    private boolean result=true;
+
 
     public Human() {
-        this.name="Ivan";
-        this.runVal=10000.0f;
-        this.jumpVal=10.0f;
+        this.name = "Ivan";
+        this.runVal = 10000.0f;
+        this.jumpVal = 10.0f;
     }
 
     public Human(String name, float runVal, float jumpVal) {
@@ -19,13 +19,13 @@ public class Human implements Competitive{
 
     @Override
     public void run() {
-        System.out.println(String.format("[%s может пробежать %.2f метров]", name, runVal ));
+        System.out.println(String.format("[%s может пробежать %.2f метров]", name, runVal));
 
     }
 
     @Override
     public void jump() {
-        System.out.println(String.format("[%s может прыгнуть %.2f метра]", name, jumpVal ));
+        System.out.println(String.format("[%s может прыгнуть %.2f метра]", name, jumpVal));
 
     }
 
@@ -33,28 +33,13 @@ public class Human implements Competitive{
         return name;
     }
 
-    @Override
-    public void setResult(boolean result) {
-        this.result=result;
-    }
-
-    @Override
-    public boolean getResult() {
-        return result;
-    }
-
-
     public float getRunVal() {
         return runVal;
     }
 
-
-
     public float getJumpVal() {
         return jumpVal;
     }
-
-
 
 
 }

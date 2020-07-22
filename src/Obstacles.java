@@ -7,12 +7,7 @@ public abstract class Obstacles {
         this.type = type;
     }
 
-
-
     protected abstract boolean isItPossibleToDo(Competitive competitive);
 
-    public float getValue() {
-        return value;
-    }
 }
 

@@ -44,37 +44,5 @@ public class Cat implements Competitive {
         return name;
     }
 
-    @Override
-    public void setResult(boolean result) {
-        this.result=result;
 
-    }
-
-    @Override
-    public boolean getResult() {
-        return result;
-    }
-
-
-    public void setName(String name) {
-        if (name.isBlank()) {
-            System.out.println("Введите имя");
-        } else {
-            this.name = name;
-        }
-    }
-
-    public void setRunVal(float runVal) {
-        if (runVal < 2000.0f) {
-            System.out.println("Не может участвовать в соревновании");
-        } else {
-            this.runVal = runVal;
-        }
-    }
-
-
-
-    public void setJumpVal(float jumpVal) {
-        this.jumpVal = jumpVal;
-    }
 }

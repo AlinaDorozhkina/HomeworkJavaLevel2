@@ -24,8 +24,6 @@ public class TwoLinkedList {
     public void addLast(String data) {
         Node newNode = new Node(data);
         if (isEmpty()) {
-            newNode.next = null;
-            newNode.prev = null;
             head = newNode;
             tail = head;
 
